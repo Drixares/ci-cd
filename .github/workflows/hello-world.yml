@@ -1,0 +1,16 @@
+run-name: "Hello world from (run-name)"
+name: "Hello World"
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - feat/*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World
+        run: echo "Hello World"
