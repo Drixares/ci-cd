@@ -12,5 +12,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Hello World
-        run: echo "Hello World"
+      - name: Print my secret
+        run: echo ${{ secrets.MY_SECRET }}
